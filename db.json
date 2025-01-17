@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fullName": "A",
+      "email": "a@gmail.com",
+      "password": "123",
+      "userType": "user"
+    },
+    {
+      "id": "2",
+      "fullName": "B",
+      "email": "b@gmail.com",
+      "password": "123",
+      "userType": "user"
+    },
+    {
+      "id": "3",
+      "fullName": "Hồ Viết Sang",
+      "email": "c@gmail.com",
+      "password": "123",
+      "userType": "user"
+    },
+    {
+      "id": 4,
+      "fullName": "1",
+      "email": "1@gmail.com",
+      "password": "123",
+      "userType": "user"
+    },
+    {
+      "id": 5,
+      "fullName": "bv",
+      "email": "bv@gmail.com",
+      "password": "123",
+      "userType": "user"
+    }
+  ],
+  "admins": [
+    {
+      "id": "1",
+      "fullName": "Lê Văn C",
+      "email": "admin1@gmail.com",
+      "password": "123",
+      "userType": "admin"
+    },
+    {
+      "id": "2",
+      "fullName": "Phạm Thị D",
+      "email": "admin2@gmail.com",
+      "password": "123",
+      "userType": "admin"
+    }
+  ]
+}
