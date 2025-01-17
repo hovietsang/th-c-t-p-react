@@ -1,8 +1,6 @@
-// src/components/SidebarUser.jsx
-
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClipboardList, faStar, faCertificate } from '@fortawesome/free-solid-svg-icons';
+import { faClipboardList, faStar, faCertificate, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 
 const SidebarUser = () => {
@@ -28,6 +26,14 @@ const SidebarUser = () => {
             >
                 <FontAwesomeIcon icon={faCertificate} className="text-3xl" />
                 <p>Chứng Nhận</p>
+            </NavLink>
+            {/* Thêm phần NavLink cho Lịch */}
+            <NavLink
+                to="/user/lich"
+                className={({ isActive }) => `mb-8 flex flex-col items-center text-lg p-4 rounded-lg ${isActive ? 'bg-gray-300 text-gray-800' : 'text-gray-600'} hover:bg-gray-200`}
+            >
+                <FontAwesomeIcon icon={faCalendarAlt} className="text-3xl" />
+                <p>Lịch</p>
             </NavLink>
         </div>
     );

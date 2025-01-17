@@ -18,6 +18,7 @@ import ChungNhan from './pages/admin/chungnhan';
 import ChungnhanUser from './pages/user/ChungnhanUser';
 import DiemUser from './pages/user/DiemUser';
 import NhiemvuUser from './pages/user/NhiemvuUser';
+import Lich from './pages/user/Lich';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -82,6 +83,10 @@ function App() {
               <Route
                 path="/user/chungnhan"
                 element={isLoggedIn && userType === 'user' ? <ChungnhanUser /> : <Navigate to="/" />}
+              />
+              <Route
+                path="/user/lich"
+                element={isLoggedIn && userType === 'user' ? <Lich /> : <Navigate to="/" />}
               />
 
               {/* Routes cho admin */}
